@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="generator" content="JsDoc Toolkit"/>
+
+<title>HiloJS API Reference - Drawable</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.sidebar-nav {
+	padding: 9px 0;
+}
+.hero-unit {
+	padding: 30px;
+}
+.hero-unit p {
+	font-size: 16px;
+}
+.hero-unit li {
+	font-size: 16px;
+	line-height: 24px;
+}
+.fixedFont{
+	font-family: courier;
+}
+.item-box{
+	padding: 6px 0 0 8px;
+	margin-bottom: 18px;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e1e1e1;
+}
+</style>
+<link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">HiloJS</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="../../index.html">首页</a></li>
+          <li><a href="http://gitlab.alibaba-inc.com/ali-f2e-game/hilo" target="_blank">源码下载</a></li>
+          <li class="active"><a href="../index.html">API文档</a></li>
+          <li><a href="../tutorial.html">使用指南</a></li>
+          <li><a href="../demo.html">作品演示</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+<ul class="nav nav-list">
+	<li class="nav-header">类列表</li>
+	
+	<li>
+	</li>
+	
+	<li><a href="../symbols/Bitmap.html">Bitmap</a>
+	</li>
+	
+	<li><a href="../symbols/BitmapText.html">BitmapText</a>
+	</li>
+	
+	<li><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a>
+	</li>
+	
+	<li><a href="../symbols/Class.html">Class</a>
+	</li>
+	
+	<li><a href="../symbols/Container.html">Container</a>
+	</li>
+	
+	<li><a href="../symbols/DOMElement.html">DOMElement</a>
+	</li>
+	
+	<li><a href="../symbols/DOMRenderer.html">DOMRenderer</a>
+	</li>
+	
+	<li><a href="../symbols/Drawable.html">Drawable</a>
+	</li>
+	
+	<li><a href="../symbols/EventMixin.html">EventMixin</a>
+	</li>
+	
+	<li><a href="../symbols/FilesLoad.html">FilesLoad</a>
+	</li>
+	
+	<li><a href="../symbols/Graphics.html">Graphics</a>
+	</li>
+	
+	<li><a href="../symbols/Hilo.html">Hilo</a>
+	</li>
+	
+	<li><a href="../symbols/Matrix.html">Matrix</a>
+	</li>
+	
+	<li><a href="../symbols/Renderer.html">Renderer</a>
+	</li>
+	
+	<li><a href="../symbols/Sprite.html">Sprite</a>
+	</li>
+	
+	<li><a href="../symbols/Stage.html">Stage</a>
+	</li>
+	
+	<li><a href="../symbols/Text.html">Text</a>
+	</li>
+	
+	<li><a href="../symbols/TextureAtlas.html">TextureAtlas</a>
+	</li>
+	
+	<li><a href="../symbols/Ticker.html">Ticker</a>
+	</li>
+	
+	<li><a href="../symbols/Tween.html">Tween</a>
+	</li>
+	
+	<li><a href="../symbols/View.html">View</a>
+	</li>
+	
+</ul>
+</div>
+        </div>
+        <div class="span9">
+
+            <!-- ============================== class title ============================ -->
+            <h1 style="color:#333;">
+            
+        <!-- Class  - Drawable -->
+        Drawable
+            </h1><br/>
+
+            <!-- ============================== class summary ========================== -->            
+        <p class="description">
+            
+
+            
+            
+
+            
+            
+                <span style="display:block;margin:0 0 2px 0;">
+                    <b style="margin-right:10px;">模块</b> hilo/view/Drawable
+                </span>
+            
+
+            
+                <span style="display:block;margin:0 0 2px 0;">
+                    <b style="margin-right:10px;">依赖</b>
+                    <span><a href="../symbols/Hilo.html">hilo/core/Hilo</a></span>, <span><a href="../symbols/Class.html">hilo/core/Class</a></span>
+                </span>
+            
+
+            <span style="display:block;margin:0 0 2px 0;">
+                <b style="margin-right:10px;">源码</b>
+                <a href="../symbols/src/src_view_Drawable.js.html">Drawable.js</a>
+            </span>
+
+            <br>
+            Drawable是可绘制图像的包装。
+            
+            
+        </p>
+
+        <!-- ============================== constructor summary ==================== -->            
+        <!-- 
+        <h3 style="margin-bottom:6px;">构造函数概览</h3>
+        <table class="table table-striped table-bordered table-condensed" cellspacing="0" summary="A summary of the constructor documented in the class Drawable.">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:10%;"></th>
+                    <th scope="col">说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="attributes">&nbsp;</td>
+                    <td class="nameDescription" >
+                        <div class="fixedFont">
+                            <b><a href="../symbols/Drawable.html#constructor">Drawable</a></b>()
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+         -->
+
+        <!-- ============================== properties summary ===================== -->
+        
+            
+            
+            <div style="margin:30px 0 5px 0;">
+                <h3 style="display:inline;margin-right:10px;">公开属性</h3>
+                
+            </div>
+            <table class="table table-striped table-bordered table-condensed" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:18px;padding:0;"></th>
+                        <th scope="col" style="border-left:0;">属性</th>
+                        <th scope="col" style="width:10%;">定义于</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    
+                    <tr >
+                        <td style="padding:0;">
+                            
+                        </td>
+                        <td style="border-left:0;">
+                            <div class="fixedFont">
+                                <!--  -->
+                                <b><a href="../symbols/Drawable.html#image">image</a></b>:HTMLImageElement
+                            </div>
+                            <div class="description">
+                                
+                                要绘制的图像。即可被CanvasRenderingContext2D.drawImage使用的对象类型，可以是HTMLImageElement、HTMLCanvasElement、HTMLVideoElement等对象。
+                            </div>
+                        </td>
+                        <td>
+                            Drawable
+                        </td>
+                    </tr>
+                
+                    
+                    <tr >
+                        <td style="padding:0;">
+                            
+                        </td>
+                        <td style="border-left:0;">
+                            <div class="fixedFont">
+                                <!--  -->
+                                <b><a href="../symbols/Drawable.html#rect">rect</a></b>:array
+                            </div>
+                            <div class="description">
+                                
+                                要绘制的图像的矩形区域。
+                            </div>
+                        </td>
+                        <td>
+                            Drawable
+                        </td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            
+
+            <script type="text/javascript">
+            function toggleProperties(){
+                var alink = $('#propToggleIcon');
+                if(alink.hasClass('icon-circle-arrow-right')){
+                    alink.removeClass('icon-circle-arrow-right');
+                    alink.addClass('icon-circle-arrow-down');
+                    $('#propToggleTip').html('隐藏继承属性');
+                    $('.inheritProp').show();
+                }else{
+                    alink.removeClass('icon-circle-arrow-down');
+                    alink.addClass('icon-circle-arrow-right');
+                    $('#propToggleTip').html('显示继承属性');
+                    $('.inheritProp').hide();
+                }
+            }
+            </script>
+        
+
+        <!-- ============================== methods summary ======================== -->
+        
+            
+            
+            <div style="margin:30px 0 5px; 0">
+                <h3 style="display:inline;margin-right:10px;">公开方法</h3>
+                
+            </div>
+            <table class="table table-striped table-bordered table-condensed" cellspacing="0" summary="A summary of the methods documented in the class Drawable.">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:18px;padding:0;"></th>
+                        <th scope="col" style="border-left:0;">方法</th>
+                        <th scope="col" style="width:10%;">定义于</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td style="padding:0;"></td>
+                    <td style="border-left:0;">
+                        <div class="fixedFont">
+                        <b><a href="#constructor">Drawable</a></b>()
+                        </div>
+                        <div class="description">构造函数。</div>
+                    </td>
+                    <td>Drawable</td>
+                </tr>
+                
+                
+                
+                    
+                    <tr >
+                        <td style="padding:0;">
+                            
+                        </td>
+                        <td style="border-left:0;">
+                            <div class="fixedFont"><b><a href="../symbols/Drawable.html#init">init</a></b>(properties:Object)
+                            </div>
+                            <div class="description">
+                                
+                                初始化可绘制对象。
+                            </div>
+                        </td>
+                        <td>
+                            Drawable
+                        </td>
+                    </tr>
+                
+                    
+                    <tr >
+                        <td style="padding:0;">
+                            
+                        </td>
+                        <td style="border-left:0;">
+                            <div class="fixedFont"><b><a href="../symbols/Drawable.html#.isDrawable">isDrawable</a></b>(elem:Object):Boolean
+                            </div>
+                            <div class="description">
+                                <span class="label">Static</span> 
+                                判断参数elem指定元素是否为可绘制对象。
+                            </div>
+                        </td>
+                        <td>
+                            Drawable
+                        </td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            
+
+            <script type="text/javascript">
+            function toggleMethods(){
+                var alink = $('#methodToggleIcon');
+                if(alink.hasClass('icon-circle-arrow-right')){
+                    alink.removeClass('icon-circle-arrow-right');
+                    alink.addClass('icon-circle-arrow-down');
+                    $('#methodToggleTip').html('隐藏继承方法');
+                    $('.inheritMethod').show();
+                }else{
+                    alink.removeClass('icon-circle-arrow-down');
+                    alink.addClass('icon-circle-arrow-right');
+                    $('#methodToggleTip').html('显示继承方法');
+                    $('.inheritMethod').hide();
+                }
+            }
+            </script>
+        
+
+        <!-- ============================== events summary ======================== -->
+        
+
+        <!-- ============================== field details ========================== -->        
+        
+        <br/>
+        <div class="item-box">
+            <h3 style="margin-bottom:6px;">属性详情</h3>
+        </div>
+        
+            <a name="image"> </a>
+            <div class="fixedFont">
+            <b>image</b><span class="light">:HTMLImageElement</span>
+            
+            </div>
+            <div class="description">
+                要绘制的图像。即可被CanvasRenderingContext2D.drawImage使用的对象类型，可以是HTMLImageElement、HTMLCanvasElement、HTMLVideoElement等对象。
+                
+                
+            </div>
+            
+            
+
+            
+            
+            
+            
+
+            <hr/>
+        
+            <a name="rect"> </a>
+            <div class="fixedFont">
+            <b>rect</b><span class="light">:array</span>
+            
+            </div>
+            <div class="description">
+                要绘制的图像的矩形区域。
+                
+                
+            </div>
+            
+            
+
+            
+            
+            
+            
+
+            
+        
+        
+
+        <!-- ============================== constructor details ==================== -->        
+        
+        <br/><br/>
+        <div class="details">
+            <a name="constructor"> </a>
+            <div class="item-box"><h3 style="margin-bottom:6px;">构造函数</h3></div>
+            <div class="fixedFont">
+                <b>Drawable</b>()
+            </div>
+            
+            
+        </div>
+        
+
+        <!-- ============================== method details ========================= -->        
+        
+        <br/>
+        <div class="item-box"><h3 style="margin-bottom:6px;">方法详情</h3></div>
+        
+            <a name="init"> </a>
+            <div class="fixedFont">
+            
+            <b>init</b>(properties:Object)
+            </div>
+            <div class="description">初始化可绘制对象。</div>
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label label-info">参数</span></dt>
+                
+                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
+                        <b>properties</b>:<span>Object</span> 
+                         — 要初始化的属性。
+                    </dt>
+                
+                </dl>
+            
+            
+            
+            
+            
+            
+            
+
+            <hr/>
+        
+            <a name=".isDrawable"> </a>
+            <div class="fixedFont">
+            [Static] 
+            <b>isDrawable</b>(elem:Object):<span class="light">Boolean</span>
+            </div>
+            <div class="description">判断参数elem指定元素是否为可绘制对象。</div>
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label label-info">参数</span></dt>
+                
+                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
+                        <b>elem</b>:<span>Object</span> 
+                         — 要测试的对象。
+                    </dt>
+                
+                </dl>
+            
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label label-info">返回值</span></dt>
+                
+                    <dd class="fixedFont" style="margin-left:20px;font-weight:normal;"><span>Boolean</span>  — 如果是可绘制对象则返回true，否则为false。</dd>
+                
+                </dl>
+            
+            
+            
+
+            
+        
+        
+        
+        <!-- ============================== event details ========================= -->     
+        
+
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+    <p style="text-align:center;">&copy; HiloJS 2014</p>
+    </footer>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="generator" content="JsDoc Toolkit"/>
+
+<title>HiloJS API Reference - Matrix</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.sidebar-nav {
+	padding: 9px 0;
+}
+.hero-unit {
+	padding: 30px;
+}
+.hero-unit p {
+	font-size: 16px;
+}
+.hero-unit li {
+	font-size: 16px;
+	line-height: 24px;
+}
+.fixedFont{
+	font-family: courier;
+}
+.item-box{
+	padding: 6px 0 0 8px;
+	margin-bottom: 18px;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e1e1e1;
+}
+</style>
+<link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">HiloJS</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="../../index.html">首页</a></li>
+          <li><a href="http://gitlab.alibaba-inc.com/ali-f2e-game/hilo" target="_blank">源码下载</a></li>
+          <li class="active"><a href="../index.html">API文档</a></li>
+          <li><a href="../tutorial.html">使用指南</a></li>
+          <li><a href="../demo.html">作品演示</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+<ul class="nav nav-list">
+	<li class="nav-header">类列表</li>
+	
+	<li>
+	</li>
+	
+	<li><a href="../symbols/Bitmap.html">Bitmap</a>
+	</li>
+	
+	<li><a href="../symbols/BitmapText.html">BitmapText</a>
+	</li>
+	
+	<li><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a>
+	</li>
+	
+	<li><a href="../symbols/Class.html">Class</a>
+	</li>
+	
+	<li><a href="../symbols/Container.html">Container</a>
+	</li>
+	
+	<li><a href="../symbols/DOMElement.html">DOMElement</a>
+	</li>
+	
+	<li><a href="../symbols/DOMRenderer.html">DOMRenderer</a>
+	</li>
+	
+	<li><a href="../symbols/Drawable.html">Drawable</a>
+	</li>
+	
+	<li><a href="../symbols/EventMixin.html">EventMixin</a>
+	</li>
+	
+	<li><a href="../symbols/FilesLoad.html">FilesLoad</a>
+	</li>
+	
+	<li><a href="../symbols/Graphics.html">Graphics</a>
+	</li>
+	
+	<li><a href="../symbols/Hilo.html">Hilo</a>
+	</li>
+	
+	<li><a href="../symbols/Matrix.html">Matrix</a>
+	</li>
+	
+	<li><a href="../symbols/Renderer.html">Renderer</a>
+	</li>
+	
+	<li><a href="../symbols/Sprite.html">Sprite</a>
+	</li>
+	
+	<li><a href="../symbols/Stage.html">Stage</a>
+	</li>
+	
+	<li><a href="../symbols/Text.html">Text</a>
+	</li>
+	
+	<li><a href="../symbols/TextureAtlas.html">TextureAtlas</a>
+	</li>
+	
+	<li><a href="../symbols/Ticker.html">Ticker</a>
+	</li>
+	
+	<li><a href="../symbols/Tween.html">Tween</a>
+	</li>
+	
+	<li><a href="../symbols/View.html">View</a>
+	</li>
+	
+</ul>
+</div>
+        </div>
+        <div class="span9">
+
+            <!-- ============================== class title ============================ -->
+            <h1 style="color:#333;">
+            
+        <!-- Class  - Matrix -->
+        Matrix
+            </h1><br/>
+
+            <!-- ============================== class summary ========================== -->            
+        <p class="description">
+            
+
+            
+            
+
+            
+            
+                <span style="display:block;margin:0 0 2px 0;">
+                    <b style="margin-right:10px;">模块</b> hilo/geom/Matrix
+                </span>
+            
+
+            
+                <span style="display:block;margin:0 0 2px 0;">
+                    <b style="margin-right:10px;">依赖</b>
+                    <span><a href="../symbols/Class.html">hilo/core/Class</a></span>
+                </span>
+            
+
+            <span style="display:block;margin:0 0 2px 0;">
+                <b style="margin-right:10px;">源码</b>
+                <a href="../symbols/src/src_geom_Matrix.js.html">Matrix.js</a>
+            </span>
+
+            <br>
+            Matrix类表示一个转换矩阵，它确定如何将点从一个坐标空间映射到另一个坐标空间。
+            
+            
+        </p>
+
+        <!-- ============================== constructor summary ==================== -->            
+        <!-- 
+        <h3 style="margin-bottom:6px;">构造函数概览</h3>
+        <table class="table table-striped table-bordered table-condensed" cellspacing="0" summary="A summary of the constructor documented in the class Matrix.">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:10%;"></th>
+                    <th scope="col">说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="attributes">&nbsp;</td>
+                    <td class="nameDescription" >
+                        <div class="fixedFont">
+                            <b><a href="../symbols/Matrix.html#constructor">Matrix</a></b>()
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+         -->
+
+        <!-- ============================== properties summary ===================== -->
+        
+
+        <!-- ============================== methods summary ======================== -->
+        
+
+        <!-- ============================== events summary ======================== -->
+        
+
+        <!-- ============================== field details ========================== -->        
+        
+
+        <!-- ============================== constructor details ==================== -->        
+        
+        <br/><br/>
+        <div class="details">
+            <a name="constructor"> </a>
+            <div class="item-box"><h3 style="margin-bottom:6px;">构造函数</h3></div>
+            <div class="fixedFont">
+                <b>Matrix</b>()
+            </div>
+            
+            
+        </div>
+        
+
+        <!-- ============================== method details ========================= -->        
+        
+        
+        <!-- ============================== event details ========================= -->     
+        
+
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+    <p style="text-align:center;">&copy; HiloJS 2014</p>
+    </footer>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>

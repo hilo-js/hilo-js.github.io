@@ -1,0 +1,28 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.sidebar-nav {
+	padding: 9px 0;
+}
+.hero-unit {
+	padding: 30px;
+}
+.hero-unit p {
+	font-size: 16px;
+}
+.hero-unit li {
+	font-size: 16px;
+	line-height: 24px;
+}
+.fixedFont{
+	font-family: courier;
+}
+.item-box{
+	padding: 6px 0 0 8px;
+	margin-bottom: 18px;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e1e1e1;
+}
