@@ -7,11 +7,11 @@
 	.line {border-right: 1px dotted #666; color: #666; font-style: normal;}
 	</style></head><body><pre><span class='line'>  1</span> <span class="WHIT">
 <span class='line'>  2</span> </span><span class="COMM">/**
-<span class='line'>  3</span>  * &lt;h4>示例:&lt;/h4>
-<span class='line'>  4</span>  * &lt;code>
-<span class='line'>  5</span>  * var bmp = new Hilo.Bitmap({image:imgElem, rect:[0, 0, 100, 100]});&lt;br>
+<span class='line'>  3</span>  * 示例:
+<span class='line'>  4</span>  * &lt;pre>
+<span class='line'>  5</span>  * var bmp = new Hilo.Bitmap({image:imgElem, rect:[0, 0, 100, 100]});
 <span class='line'>  6</span>  * stage.addChild(bmp);
-<span class='line'>  7</span>  * &lt;/code>
+<span class='line'>  7</span>  * &lt;/pre>
 <span class='line'>  8</span>  * @class Bitmap类表示位图图像类。
 <span class='line'>  9</span>  * @augments View
 <span class='line'> 10</span>  * @param {Object} properties 创建对象的属性参数。可包含此类所有可写属性。此外还包括：
@@ -26,21 +26,20 @@
 <span class='line'> 19</span>  */</span><span class="WHIT">
 <span class='line'> 20</span> </span><span class="WHIT"> </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">Bitmap</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Class.create</span><span class="PUNC">(</span><span class="COMM">/** @lends Bitmap.prototype */</span><span class="PUNC">{</span><span class="WHIT">
 <span class='line'> 21</span> </span><span class="WHIT">    </span><span class="NAME">Extends</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">View</span><span class="PUNC">,</span><span class="WHIT">
-<span class='line'> 22</span> </span><span class="WHIT">    </span><span class="COMM">/** @constructs */</span><span class="WHIT">
-<span class='line'> 23</span> </span><span class="WHIT">    </span><span class="NAME">constructor</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="NAME">Bitmap</span><span class="PUNC">(</span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
-<span class='line'> 24</span> </span><span class="WHIT">        </span><span class="NAME">properties</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">properties</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 25</span> </span><span class="WHIT">        </span><span class="NAME">this.id</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">this.id</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="NAME">properties.id</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="NAME">Hilo.getUid</span><span class="PUNC">(</span><span class="STRN">"Bitmap"</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 26</span> </span><span class="WHIT">        </span><span class="NAME">Bitmap.superclass.constructor.call</span><span class="PUNC">(</span><span class="KEYW">this</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 27</span> </span><span class="WHIT">        
-<span class='line'> 28</span>         </span><span class="NAME">this.drawable</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">Drawable</span><span class="PUNC">(</span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 29</span> 
-<span class='line'> 30</span> </span><span class="WHIT">        </span><span class="COMM">//init width and height</span><span class="WHIT">
-<span class='line'> 31</span> </span><span class="WHIT">        </span><span class="KEYW">if</span><span class="PUNC">(</span><span class="PUNC">!</span><span class="NAME">this.width</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="PUNC">!</span><span class="NAME">this.height</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
-<span class='line'> 32</span> </span><span class="WHIT">            </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">this.drawable.rect</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 33</span> </span><span class="WHIT">            </span><span class="KEYW">if</span><span class="PUNC">(</span><span class="NAME">rect</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
-<span class='line'> 34</span> </span><span class="WHIT">                </span><span class="NAME">this.width</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="PUNC">[</span><span class="NUMB">2</span><span class="PUNC">]</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 35</span> </span><span class="WHIT">                </span><span class="NAME">this.height</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="PUNC">[</span><span class="NUMB">3</span><span class="PUNC">]</span><span class="PUNC">;</span><span class="WHIT">
-<span class='line'> 36</span> </span><span class="WHIT">            </span><span class="PUNC">}</span><span class="WHIT">
-<span class='line'> 37</span> </span><span class="WHIT">        </span><span class="PUNC">}</span><span class="WHIT">
-<span class='line'> 38</span> </span><span class="WHIT">    </span><span class="PUNC">}</span><span class="WHIT">
-<span class='line'> 39</span> </span><span class="WHIT"> </span><span class="PUNC">}</span><span class="PUNC">)</span><span class="PUNC">;</span></pre></body></html>
+<span class='line'> 22</span> </span><span class="WHIT">    </span><span class="NAME">constructor</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="NAME">Bitmap</span><span class="PUNC">(</span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 23</span> </span><span class="WHIT">        </span><span class="NAME">properties</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">properties</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 24</span> </span><span class="WHIT">        </span><span class="NAME">this.id</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">this.id</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="NAME">properties.id</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="NAME">Hilo.getUid</span><span class="PUNC">(</span><span class="STRN">"Bitmap"</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 25</span> </span><span class="WHIT">        </span><span class="NAME">Bitmap.superclass.constructor.call</span><span class="PUNC">(</span><span class="KEYW">this</span><span class="PUNC">,</span><span class="WHIT"> </span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 26</span> </span><span class="WHIT">        
+<span class='line'> 27</span>         </span><span class="NAME">this.drawable</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">new</span><span class="WHIT"> </span><span class="NAME">Drawable</span><span class="PUNC">(</span><span class="NAME">properties</span><span class="PUNC">)</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 28</span> 
+<span class='line'> 29</span> </span><span class="WHIT">        </span><span class="COMM">//init width and height</span><span class="WHIT">
+<span class='line'> 30</span> </span><span class="WHIT">        </span><span class="KEYW">if</span><span class="PUNC">(</span><span class="PUNC">!</span><span class="NAME">this.width</span><span class="WHIT"> </span><span class="PUNC">||</span><span class="WHIT"> </span><span class="PUNC">!</span><span class="NAME">this.height</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 31</span> </span><span class="WHIT">            </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">this.drawable.rect</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 32</span> </span><span class="WHIT">            </span><span class="KEYW">if</span><span class="PUNC">(</span><span class="NAME">rect</span><span class="PUNC">)</span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 33</span> </span><span class="WHIT">                </span><span class="NAME">this.width</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="PUNC">[</span><span class="NUMB">2</span><span class="PUNC">]</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 34</span> </span><span class="WHIT">                </span><span class="NAME">this.height</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">rect</span><span class="PUNC">[</span><span class="NUMB">3</span><span class="PUNC">]</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 35</span> </span><span class="WHIT">            </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 36</span> </span><span class="WHIT">        </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 37</span> </span><span class="WHIT">    </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 38</span> </span><span class="WHIT"> </span><span class="PUNC">}</span><span class="PUNC">)</span><span class="PUNC">;</span></pre></body></html>

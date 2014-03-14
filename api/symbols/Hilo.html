@@ -2,45 +2,18 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="JsDoc Toolkit"/>
 
-<title>HiloJS API Reference - Hilo</title>
+<title>HiloJS API参考文档 - Hilo</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet">
-<style type="text/css">
-body {
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
-.sidebar-nav {
-	padding: 9px 0;
-}
-.hero-unit {
-	padding: 30px;
-}
-.hero-unit p {
-	font-size: 16px;
-}
-.hero-unit li {
-	font-size: 16px;
-	line-height: 24px;
-}
-.fixedFont{
-	font-family: courier;
-}
-.item-box{
-	padding: 6px 0 0 8px;
-	margin-bottom: 18px;
-	color: #333;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	background-color: #f9f9f9;
-	border-bottom: 1px solid #e1e1e1;
-}
-</style>
+<link href="../../css/prettify.min.css" rel="stylesheet">
+<link href="../../css/api.min.css" rel="stylesheet">
 <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top msfont">
   <div class="navbar-inner">
     <div class="container-fluid">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -48,7 +21,7 @@ body {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="#">HiloJS</a>
+      <a class="brand" href="#"><span style="color:#15c6ff;">Hilo</span><span style="color:#fe6258;">JS</span></a>
       <div class="nav-collapse">
         <ul class="nav">
           <li><a href="../../index.html">首页</a></li>
@@ -62,90 +35,118 @@ body {
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid main-container">
     <div class="row-fluid">
         <div class="span3">
-            <div class="well sidebar-nav">
-<ul class="nav nav-list">
-	<li class="nav-header">类列表</li>
-	
-	<li>
-	</li>
-	
-	<li><a href="../symbols/Bitmap.html">Bitmap</a>
-	</li>
-	
-	<li><a href="../symbols/BitmapText.html">BitmapText</a>
-	</li>
-	
-	<li><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a>
-	</li>
-	
-	<li><a href="../symbols/Class.html">Class</a>
-	</li>
-	
-	<li><a href="../symbols/Container.html">Container</a>
-	</li>
-	
-	<li><a href="../symbols/DOMElement.html">DOMElement</a>
-	</li>
-	
-	<li><a href="../symbols/DOMRenderer.html">DOMRenderer</a>
-	</li>
-	
-	<li><a href="../symbols/Drawable.html">Drawable</a>
-	</li>
-	
-	<li><a href="../symbols/EventMixin.html">EventMixin</a>
-	</li>
-	
-	<li><a href="../symbols/FilesLoad.html">FilesLoad</a>
-	</li>
-	
-	<li><a href="../symbols/Graphics.html">Graphics</a>
-	</li>
-	
-	<li><a href="../symbols/Hilo.html">Hilo</a>
-	</li>
-	
-	<li><a href="../symbols/Matrix.html">Matrix</a>
-	</li>
-	
-	<li><a href="../symbols/Renderer.html">Renderer</a>
-	</li>
-	
-	<li><a href="../symbols/Sprite.html">Sprite</a>
-	</li>
-	
-	<li><a href="../symbols/Stage.html">Stage</a>
-	</li>
-	
-	<li><a href="../symbols/Text.html">Text</a>
-	</li>
-	
-	<li><a href="../symbols/TextureAtlas.html">TextureAtlas</a>
-	</li>
-	
-	<li><a href="../symbols/Ticker.html">Ticker</a>
-	</li>
-	
-	<li><a href="../symbols/Tween.html">Tween</a>
-	</li>
-	
-	<li><a href="../symbols/View.html">View</a>
-	</li>
-	
-</ul>
+            
+<div class="well sidebar-nav">
+<div class="hilo-header msfont">类列表</div>
+<div class="nav-content">
+    <ul class="nav nav-list">
+        
+        
+        
+        <li class="nav-pkg">core<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/Class.html">Class</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Hilo.html">Hilo</a></li>
+        
+        
+        
+        <li class="nav-pkg">event<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/EventMixin.html">EventMixin</a></li>
+        
+        
+        
+        <li class="nav-pkg">geom<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/Matrix.html">Matrix</a></li>
+        
+        
+        
+        <li class="nav-pkg">renderer<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/DOMRenderer.html">DOMRenderer</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Renderer.html">Renderer</a></li>
+        
+        
+        
+        <li class="nav-pkg">util<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/TextureAtlas.html">TextureAtlas</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Ticker.html">Ticker</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Tween.html">Tween</a></li>
+        
+        
+        
+        <li class="nav-pkg">view<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/Bitmap.html">Bitmap</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/BitmapText.html">BitmapText</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Container.html">Container</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/DOMElement.html">DOMElement</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Drawable.html">Drawable</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Graphics.html">Graphics</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Sprite.html">Sprite</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Stage.html">Stage</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/Text.html">Text</a></li>
+        
+        
+        
+        <li class="nav-class"><a href="../symbols/View.html">View</a></li>
+        
+    </ul>
+    </div>
 </div>
         </div>
         <div class="span9">
 
             <!-- ============================== class title ============================ -->
-            <h1 style="color:#333;">
+            <h1>
             
-        <!-- Static Class  - Hilo -->
         Hilo
-            </h1><br/>
+            </h1><hr style="margin-top:10px;" />
 
             <!-- ============================== class summary ========================== -->            
         <p class="description">
@@ -174,61 +175,38 @@ body {
             
         </p>
 
-        <!-- ============================== constructor summary ==================== -->            
-        <!-- 
-        <h3 style="margin-bottom:6px;">构造函数概览</h3>
-        <table class="table table-striped table-bordered table-condensed" cellspacing="0" summary="A summary of the constructor documented in the class Hilo.">
-            <thead>
-                <tr>
-                    <th scope="col" style="width:10%;"></th>
-                    <th scope="col">说明</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="attributes">&nbsp;</td>
-                    <td class="nameDescription" >
-                        <div class="fixedFont">
-                            <b><a href="../symbols/Hilo.html#constructor">Hilo</a></b>()
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-         -->
-
         <!-- ============================== properties summary ===================== -->
         
             
             
             <div style="margin:30px 0 5px 0;">
-                <h3 style="display:inline;margin-right:10px;">公开属性</h3>
+                <h3 style="display:inline;margin-right:10px;">属性概览</h3>
                 
             </div>
-            <table class="table table-striped table-bordered table-condensed" cellspacing="0">
+            <table class="table table-striped table-bordered table-condensed table-symbol" cellspacing="0">
                 <thead>
                     <tr>
-                        <th scope="col" style="width:18px;padding:0;"></th>
-                        <th scope="col" style="border-left:0;">属性</th>
-                        <th scope="col" style="width:10%;">定义于</th>
+                        <th scope="col"></th>
+                        <th scope="col">属性</th>
+                        <th scope="col">定义于</th>
                     </tr>
                 </thead>
                 <tbody>
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont">
+                        <td class="fixedFont">
+                            <div>
                                 <!-- 
                                     Hilo.
                                  -->
                                 <b><a href="../symbols/Hilo.html#.browser">browser</a></b>
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 浏览器特性。
                             </div>
                         </td>
@@ -264,15 +242,15 @@ body {
             
             
             <div style="margin:30px 0 5px; 0">
-                <h3 style="display:inline;margin-right:10px;">公开方法</h3>
+                <h3 style="display:inline;margin-right:10px;">方法概览</h3>
                 
             </div>
-            <table class="table table-striped table-bordered table-condensed" cellspacing="0" summary="A summary of the methods documented in the class Hilo.">
+            <table class="table table-striped table-bordered table-condensed table-symbol" cellspacing="0">
                 <thead>
                     <tr>
-                        <th scope="col" style="width:18px;padding:0;"></th>
-                        <th scope="col" style="border-left:0;">方法</th>
-                        <th scope="col" style="width:10%;">定义于</th>
+                        <th scope="col"></th>
+                        <th scope="col">方法</th>
+                        <th scope="col">定义于</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -281,14 +259,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.copy">copy</a></b>(strict, source, strict)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.copy">copy</a></b>(target:Object, source:Object, strict:Boolean)
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 简单的浅复制对象。
                             </div>
                         </td>
@@ -299,14 +277,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.createElement">createElement</a></b>(type, properties)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.createElement">createElement</a></b>(type:String, properties:Object):HTMLElement
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 创建一个DOM元素。可指定属性和样式。
                             </div>
                         </td>
@@ -317,14 +295,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.getElementRect">getElementRect</a></b>(elem)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.getElementRect">getElementRect</a></b>(elem:HTMLElement):Object
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 获取DOM元素在页面中的内容显示区域。
                             </div>
                         </td>
@@ -335,14 +313,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.getTransformCSS">getTransformCSS</a></b>(obj)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.getTransformCSS">getTransformCSS</a></b>(obj:<a href="../symbols/View.html">View</a>):String
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 生成可视对象的CSS变换样式。
                             </div>
                         </td>
@@ -353,14 +331,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.getUid">getUid</a></b>(prefix)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.getUid">getUid</a></b>(prefix:String)
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 获取一个全局唯一的id。如Stage1，Bitmap2等。
                             </div>
                         </td>
@@ -371,14 +349,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.setElementStyleByView">setElementStyleByView</a></b>(obj)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.setElementStyleByView">setElementStyleByView</a></b>(obj:<a href="../symbols/View.html">View</a>)
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 设置可视对象DOM元素的CSS样式。
                             </div>
                         </td>
@@ -389,14 +367,14 @@ body {
                 
                     
                     <tr >
-                        <td style="padding:0;">
+                        <td>
                             
                         </td>
-                        <td style="border-left:0;">
-                            <div class="fixedFont"><b><a href="../symbols/Hilo.html#.viewToString">viewToString</a></b>(view)
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/Hilo.html#.viewToString">viewToString</a></b>(view:<a href="../symbols/View.html">View</a>)
                             </div>
                             <div class="description">
-                                <span class="label">Static</span> 
+                                <span class="label">static</span> 
                                 为指定的可视对象生成一个包含路径的字符串表示形式。如Stage1.Container2.Bitmap3。
                             </div>
                         </td>
@@ -427,25 +405,21 @@ body {
             </script>
         
 
-        <!-- ============================== events summary ======================== -->
-        
-
         <!-- ============================== field details ========================== -->        
         
         <br/>
-        <div class="item-box">
-            <h3 style="margin-bottom:6px;">属性详情</h3>
+        <div class="">
+            <h3 style="margin-bottom:15px;">属性详情</h3>
         </div>
         
             <a name=".browser"> </a>
-            <div class="fixedFont">[Static] 
+            <div class="member-box">
+            <div class="member-header">[Static] 
             <b>browser</b>
             
             </div>
             <div class="description">
                 浏览器特性。
-                
-                
             </div>
             
             
@@ -455,7 +429,7 @@ body {
             
             
 
-            
+            </div>
         
         
 
@@ -465,12 +439,13 @@ body {
         <!-- ============================== method details ========================= -->        
         
         <br/>
-        <div class="item-box"><h3 style="margin-bottom:6px;">方法详情</h3></div>
+        <div class=""><h3 style="margin-bottom:15px;">方法详情</h3></div>
         
             <a name=".copy"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>copy</b>(strict, source, strict)
+            <b>copy</b>(target:Object, source:Object, strict:Boolean)
             </div>
             <div class="description">简单的浅复制对象。</div>
             
@@ -478,21 +453,21 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>strict</b>
-                         — 当为true时只覆盖已有属性
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>target</b>:<span>Object</span> 
+                         — 要复制的目标对象。
                     </dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>source</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>source</b>:<span>Object</span> 
+                         — 要复制的源对象。
                     </dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>strict</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>strict</b>:<span>Boolean</span> 
+                         — 指定是否覆盖已有属性，默认为false，即不覆盖。
                     </dt>
                 
                 </dl>
@@ -504,12 +479,13 @@ body {
             
             
 
-            <hr/>
+            </div>
         
             <a name=".createElement"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>createElement</b>(type, properties)
+            <b>createElement</b>(type:String, properties:Object):<span class="light">HTMLElement</span>
             </div>
             <div class="description">创建一个DOM元素。可指定属性和样式。</div>
             
@@ -517,16 +493,16 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>type</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>type</b>:<span>String</span> 
+                         — 要创建的DOM元素的类型。比如：'div'。
                     </dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>properties</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>properties</b>:<span>Object</span> 
+                         — 指定DOM元素的属性和样式。
                     </dt>
                 
                 </dl>
@@ -535,15 +511,23 @@ body {
             
             
             
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"><span>HTMLElement</span>  — 一个DOM元素。</dd>
+                
+                </dl>
+            
             
             
 
-            <hr/>
+            </div>
         
             <a name=".getElementRect"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>getElementRect</b>(elem)
+            <b>getElementRect</b>(elem:HTMLElement):<span class="light">Object</span>
             </div>
             <div class="description">获取DOM元素在页面中的内容显示区域。</div>
             
@@ -551,11 +535,11 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>elem</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>elem</b>:<span>HTMLElement</span> 
+                         — DOM元素。
                     </dt>
                 
                 </dl>
@@ -564,15 +548,23 @@ body {
             
             
             
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"><span>Object</span>  — DOM元素的现实区域。格式为：{left:0, top:0, width:100, height:100}。</dd>
+                
+                </dl>
+            
             
             
 
-            <hr/>
+            </div>
         
             <a name=".getTransformCSS"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>getTransformCSS</b>(obj)
+            <b>getTransformCSS</b>(obj:<a href="../symbols/View.html">View</a>):<span class="light">String</span>
             </div>
             <div class="description">生成可视对象的CSS变换样式。</div>
             
@@ -580,11 +572,11 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>obj</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>obj</b>:<span><a href="../symbols/View.html">View</a></span> 
+                         — 指定生成CSS变换样式的可视对象。
                     </dt>
                 
                 </dl>
@@ -593,15 +585,23 @@ body {
             
             
             
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"><span>String</span>  — 生成的CSS样式字符串。</dd>
+                
+                </dl>
+            
             
             
 
-            <hr/>
+            </div>
         
             <a name=".getUid"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>getUid</b>(prefix)
+            <b>getUid</b>(prefix:String)
             </div>
             <div class="description">获取一个全局唯一的id。如Stage1，Bitmap2等。</div>
             
@@ -609,11 +609,11 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>prefix</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>prefix</b>:<span>String</span> 
+                         — 生成id的前缀。
                     </dt>
                 
                 </dl>
@@ -625,12 +625,13 @@ body {
             
             
 
-            <hr/>
+            </div>
         
             <a name=".setElementStyleByView"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>setElementStyleByView</b>(obj)
+            <b>setElementStyleByView</b>(obj:<a href="../symbols/View.html">View</a>)
             </div>
             <div class="description">设置可视对象DOM元素的CSS样式。</div>
             
@@ -638,11 +639,11 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>obj</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>obj</b>:<span><a href="../symbols/View.html">View</a></span> 
+                         — 指定要设置CSS样式的可视对象。
                     </dt>
                 
                 </dl>
@@ -654,12 +655,13 @@ body {
             
             
 
-            <hr/>
+            </div>
         
             <a name=".viewToString"> </a>
-            <div class="fixedFont">
+            <div class="member-box">
+            <div class="member-header">
             [Static] 
-            <b>viewToString</b>(view)
+            <b>viewToString</b>(view:<a href="../symbols/View.html">View</a>)
             </div>
             <div class="description">为指定的可视对象生成一个包含路径的字符串表示形式。如Stage1.Container2.Bitmap3。</div>
             
@@ -667,11 +669,11 @@ body {
             
             
                 <dl class="detailList">
-                <dt class="heading"><span class="label label-info">参数</span></dt>
+                <dt class="heading"><span class="label">parameters</span></dt>
                 
-                    <dt class="fixedFont" style="margin-left:20px;font-weight:normal;">
-                        <b>view</b>
-                         — 
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>view</b>:<span><a href="../symbols/View.html">View</a></span> 
+                         — 指定的可视对象。
                     </dt>
                 
                 </dl>
@@ -683,24 +685,26 @@ body {
             
             
 
-            
+            </div>
         
-        
-        
-        <!-- ============================== event details ========================= -->     
         
 
         </div>
     </div>
 
-    <hr>
-    <footer>
-    <p style="text-align:center;">&copy; HiloJS 2014</p>
-    </footer>
+<footer>
+	<p class="msfont footer">&copy; HiloJS 2014</p>
+</footer>
 </div>
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/prettify.min.js"></script>
+<script type="text/javascript">
+//make code pretty
+$('pre').addClass('prettyprint linenums fixedFont');
+window.prettyPrint && prettyPrint();
+</script>
 
 </body>
 </html>
