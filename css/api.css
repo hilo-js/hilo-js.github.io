@@ -93,9 +93,13 @@ body {
 	margin: 0;
 	color: #999;
 }
-.nav-list>li>a:hover{
+.nav-list .active>a, .nav-list .active>a:hover, .nav-list>li>a:hover{
 	background-color: #f9f9f9;
 	color: #15c6ff;
+	text-shadow: none;
+}
+.nav-list .active>a{
+	background: none;
 }
 
 /*index table */
