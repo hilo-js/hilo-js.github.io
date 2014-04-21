@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HiloJS Example</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/prettify.min.css" rel="stylesheet">
+<link href="../css/api.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<style type="text/css">
+.nav-content{
+  min-height: 200px;
+}
+ul li{
+  line-height: 150%;
+}
+.example-cont .example-item {
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 5px;
+	line-height: 1.5;
+	text-align: center;
+}
+.example-cont .example-item h4 {
+	line-height: 40px;
+}
+.example-cont .example-item h4 a{
+	text-decoration: none;
+	font-size: 30px;
+}
+.example-cont .item-info {
+	height: 160px;
+	overflow: hidden;
+	padding-top: 8px;
+}
+.example-cont .row-fluid .span4 {
+  margin-bottom: 3%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top msfont">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#"><span style="color:#15c6ff;">Hilo</span><span style="color:#fe6258;">JS</span></a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="http://gitlab.alibaba-inc.com/Hilo/hilo" target="_blank">源码下载</a></li>
+          <li><a href="../api/index.html">API文档</a></li>
+          <li><a href="../tutorial/index.html">快速开始</a></li>
+          <li class="active"><a href="javascript:void(0)">作品演示</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid main-container example-cont">
+  <div class="row-fluid">
+
+    <div class="span12">
+      	<div class="span4">
+      		<div class="example-item">
+      			<a href="http://g.tbcdn.cn/mtb/app-gamepad-flappy/1.0.1/index.html">
+      			<img src="../img/examples/flappy.png" />
+      			</a>
+      			<div class="item-info">
+      				<h4><a href="http://g.tbcdn.cn/mtb/app-gamepad-flappy/1.0.1/index.html">Flappy Bird</a></h4>
+      				<p>Flappy Bird 是某段时间IOS上红极一时的一个简单的像素设计小游戏。我们用Hilo做了简单的复刻，帮助你快速了解怎样用Hilo实现一个类似这样的小游戏。</p>
+      			</div>
+      		</div>
+      	</div>
+
+        <div class="span4">
+          <div class="example-item">
+            <a href="http://groups.alidemo.cn/Hilo/hilo/demo/Graphics.html">
+            <img src="http://gtms04.alicdn.com/tps/i4/T1RBxaFJxcXXXlonsr-640-320.png" />
+            </a>
+            <div class="item-info">
+              <h4><a href="http://groups.alidemo.cn/Hilo/hilo/demo/Graphics.html">Graphics Demo</a></h4>
+              <p>Hilo 包装了一些常用的基础图形绘制api，这个demo展示了一些基础常用的图形绘制方法和结果。同时支持SVG path的解析。快来试试看！</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="example-item">
+            <a href="http://groups.alidemo.cn/Hilo/hilo/demo/Bitmap.html">
+            <img src="http://gtms01.alicdn.com/tps/i1/T1NwhaFPJcXXXlonsr-640-320.png" />
+            </a>
+            <div class="item-info">
+              <h4><a href="http://groups.alidemo.cn/Hilo/hilo/demo/Bitmap.html">Bitmap Demo</a></h4>
+              <p>如果你要使用Hilo绘制一张静态的图片，或者图片上的某个区域，看demo是最直接的办法！</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="row-fluid">
+    
+        <div class="span12">
+        <div class="span4">
+          <div class="example-item">
+            <a href="http://groups.alidemo.cn/Hilo/hilo/demo/Sprite.html">
+            <img src="http://gtms03.alicdn.com/tps/i3/T1CV4bFGlbXXXlonsr-640-320.png" />
+            </a>
+            <div class="item-info">
+              <h4><a href="http://groups.alidemo.cn/Hilo/hilo/demo/Sprite.html">Sprite Demo</a></h4>
+              <p>做游戏，我们最长用到，也是最重要的就是动画精灵，为了更好的控制和渲染精灵，Hilo提供了一个便于管理的纹理集，简单的demo可以看这里。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="example-item">
+            <a href="http://groups.alidemo.cn/Hilo/hilo/demo/DOMElement.html">
+            <img src="http://gtms02.alicdn.com/tps/i2/T1c7JaFNlcXXXlonsr-640-320.png" />
+            </a>
+            <div class="item-info">
+              <h4><a href="http://groups.alidemo.cn/Hilo/hilo/demo/DOMElement.html">Dom 混合</a></h4>
+              <p>Web Game并不是只要canvas就够了，适当的使用dom来辅助能更好的实现某些功能。Hilo提供了一套几乎无缝的api允许你添加dom的元素到舞台上，并同样易于控制。</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="msfont footer">&copy; HiloJS 2014</p>
+  </footer>
+
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/prettify.min.js"></script>
+<script type="text/javascript">
+//make code pretty
+window.prettyPrint && prettyPrint();
+</script>
+
+</body>
+</html>
