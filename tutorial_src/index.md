@@ -10,7 +10,7 @@ Hilo提供多种模块化范式的版本，您可以下载：
 * [For RequireJS 版本](../../build/requirejs/hilo-requirejs.zip)
 * [For CommonJS 版本](../../build/cmd/hilo-cmd.zip)
 
-此外，您也可以到GitLab上获取Hilo的所有源码：[http://gitlab.alibaba-inc.com/hilo/hilo](http://gitlab.alibaba-inc.com/hilo/hilo)
+此外，您也可以到GitLab上获取Hilo的最新源码：[http://gitlab.alibaba-inc.com/hilo/hilo](http://gitlab.alibaba-inc.com/hilo/hilo)
 
 然后把Hilo类库引入到页面中：
 

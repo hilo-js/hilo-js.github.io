@@ -362,7 +362,8 @@ this.gameOverScene = new game.OverScene({
 
 ```
 this.gameOverScene.getChildById('start').on(Hilo.event.POINTER_START, function(e){
-    e._stopped = true;
+    //阻止舞台stage响应后续事件
+    e.stopImmediatePropagation();
     this.gameOverScene.visible = false;
 }.bind(this));
 ```
