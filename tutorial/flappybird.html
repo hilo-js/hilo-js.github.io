@@ -416,7 +416,8 @@ this.ticker.start();
 
 <p>当点击开始游戏按钮后，游戏会重新回到准备场景。因此，我们需要为它绑定事件监听。而我们不准备显示玩家的等级排行，所以等级按钮无需绑定事件。</p>
 <pre class="prettyprint well"><code>this.gameOverScene.getChildById('start').on(Hilo.event.POINTER_START, function(e){
-    e._stopped = true;
+    //阻止舞台stage响应后续事件
+    e.stopImmediatePropagation();
     this.gameOverScene.visible = false;
 }.bind(this));
 </code></pre>
