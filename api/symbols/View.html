@@ -68,6 +68,12 @@
         
         
         
+        <li class="nav-pkg">loader<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/LoadQueue.html">LoadQueue</a></li>
+        
+        
+        
         <li class="nav-pkg">renderer<span></span></li>
         
         <li class="nav-class"><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a></li>
@@ -351,6 +357,27 @@
                             <div class="description">
                                 
                                 可视对象的测量宽度。只读属性。
+                            </div>
+                        </td>
+                        <td>
+                            View
+                        </td>
+                    </tr>
+                
+                    
+                    <tr >
+                        <td>
+                            
+                        </td>
+                        <td class="fixedFont">
+                            <div>
+                                <!--  -->
+                                <b><a href="../symbols/View.html#onUpdate">onUpdate</a></b>:Function
+                            </div>
+                            <div class="description">
+                                
+                                更新可视对象，此方法会在可视对象渲染之前调用。此函数可以返回一个Boolean值。若返回false，则此对象不会渲染。默认值为null。
+限制：如果在此函数中改变了可视对象在其父容器中的层级，当前渲染帧并不会正确渲染，而是在下一渲染帧。可在其父容器的onUpdate方法中来实现。
                             </div>
                         </td>
                         <td>
@@ -657,6 +684,24 @@
                             
                         </td>
                         <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#addTo">addTo</a></b>(container:<a href="../symbols/Container.html">Container</a>, index:Uint):
+                            </div>
+                            <div class="description">
+                                
+                                添加此对象到父容器。
+                            </div>
+                        </td>
+                        <td>
+                            View
+                        </td>
+                    </tr>
+                
+                    
+                    <tr >
+                        <td>
+                            
+                        </td>
+                        <td class="fixedFont">
                             <div><b><a href="../symbols/View.html#getBounds">getBounds</a></b>():Array
                             </div>
                             <div class="description">
@@ -711,7 +756,7 @@
                             
                         </td>
                         <td class="fixedFont">
-                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>()
+                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>():
                             </div>
                             <div class="description">
                                 
@@ -734,6 +779,24 @@
                             <div class="description">
                                 
                                 可视对象的具体渲染逻辑。子类可通过覆盖此方法实现自己的渲染。
+                            </div>
+                        </td>
+                        <td>
+                            View
+                        </td>
+                    </tr>
+                
+                    
+                    <tr >
+                        <td>
+                            
+                        </td>
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#setBgFill">setBgFill</a></b>(fillStyle:Object, x:Number, y:Number, width:Number, height:Number):
+                            </div>
+                            <div class="description">
+                                
+                                设置背景填充样式。限制：DOMRenderer仅支持CSS颜色填充样式。
                             </div>
                         </td>
                         <td>
@@ -788,7 +851,7 @@
             <h3 style="margin-bottom:15px;">属性详情</h3>
         </div>
         
-            <a name="alpha"> </a>
+            <a class="anchor" name="alpha"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>alpha</b><span class="light">:Number</span>
@@ -807,7 +870,7 @@
 
             </div>
         
-            <a name="boundsArea"> </a>
+            <a class="anchor" name="boundsArea"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>boundsArea</b><span class="light">:Array</span>
@@ -826,7 +889,7 @@
 
             </div>
         
-            <a name="depth"> </a>
+            <a class="anchor" name="depth"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>depth</b><span class="light">:Number</span>
@@ -845,7 +908,7 @@
 
             </div>
         
-            <a name="drawable"> </a>
+            <a class="anchor" name="drawable"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>drawable</b><span class="light">:<a href="../symbols/Drawable.html">Drawable</a></span>
@@ -864,7 +927,7 @@
 
             </div>
         
-            <a name="height"> </a>
+            <a class="anchor" name="height"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>height</b><span class="light">:Number</span>
@@ -883,7 +946,7 @@
 
             </div>
         
-            <a name="id"> </a>
+            <a class="anchor" name="id"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>id</b><span class="light">:String</span>
@@ -902,7 +965,7 @@
 
             </div>
         
-            <a name="measuredHeight"> </a>
+            <a class="anchor" name="measuredHeight"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>measuredHeight</b><span class="light">:Number</span>
@@ -921,7 +984,7 @@
 
             </div>
         
-            <a name="measuredWidth"> </a>
+            <a class="anchor" name="measuredWidth"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>measuredWidth</b><span class="light">:Number</span>
@@ -940,7 +1003,34 @@
 
             </div>
         
-            <a name="parent"> </a>
+            <a class="anchor" name="onUpdate"> </a>
+            <div class="member-box">
+            <div class="member-header">
+            <b>onUpdate</b><span class="light">:Function</span>
+            
+            </div>
+            <div class="description">
+                更新可视对象，此方法会在可视对象渲染之前调用。此函数可以返回一个Boolean值。若返回false，则此对象不会渲染。默认值为null。
+限制：如果在此函数中改变了可视对象在其父容器中的层级，当前渲染帧并不会正确渲染，而是在下一渲染帧。可在其父容器的onUpdate方法中来实现。
+            </div>
+            
+            
+
+            
+            
+            
+            
+                <dl class="detailList">
+                    <dd>
+                        <b>默认值:</b> 
+                        <span>null</span>
+                    </dd>
+                </dl>
+            
+
+            </div>
+        
+            <a class="anchor" name="parent"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>parent</b><span class="light">:<a href="../symbols/Container.html">Container</a></span>
@@ -959,7 +1049,7 @@
 
             </div>
         
-            <a name="pivotX"> </a>
+            <a class="anchor" name="pivotX"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>pivotX</b><span class="light">:Number</span>
@@ -978,7 +1068,7 @@
 
             </div>
         
-            <a name="pivotY"> </a>
+            <a class="anchor" name="pivotY"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>pivotY</b><span class="light">:Number</span>
@@ -997,7 +1087,7 @@
 
             </div>
         
-            <a name="pointerEnabled"> </a>
+            <a class="anchor" name="pointerEnabled"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>pointerEnabled</b><span class="light">:Boolean</span>
@@ -1016,7 +1106,7 @@
 
             </div>
         
-            <a name="rotation"> </a>
+            <a class="anchor" name="rotation"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>rotation</b><span class="light">:Number</span>
@@ -1035,7 +1125,7 @@
 
             </div>
         
-            <a name="scaleX"> </a>
+            <a class="anchor" name="scaleX"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>scaleX</b><span class="light">:Number</span>
@@ -1054,7 +1144,7 @@
 
             </div>
         
-            <a name="scaleY"> </a>
+            <a class="anchor" name="scaleY"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>scaleY</b><span class="light">:Number</span>
@@ -1073,7 +1163,7 @@
 
             </div>
         
-            <a name="stage"> </a>
+            <a class="anchor" name="stage"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>stage</b><span class="light">:<a href="../symbols/Stage.html">Stage</a></span>
@@ -1092,7 +1182,7 @@
 
             </div>
         
-            <a name="visible"> </a>
+            <a class="anchor" name="visible"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>visible</b><span class="light">:Boolean</span>
@@ -1111,7 +1201,7 @@
 
             </div>
         
-            <a name="width"> </a>
+            <a class="anchor" name="width"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>width</b><span class="light">:Number</span>
@@ -1130,7 +1220,7 @@
 
             </div>
         
-            <a name="x"> </a>
+            <a class="anchor" name="x"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>x</b><span class="light">:Number</span>
@@ -1149,7 +1239,7 @@
 
             </div>
         
-            <a name="y"> </a>
+            <a class="anchor" name="y"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>y</b><span class="light">:Number</span>
@@ -1174,7 +1264,7 @@
         
         <br/>
         <div class="details">
-            <a name="constructor"> </a>
+            <a class="anchor" name="constructor"> </a>
             <div class="">
                 <h3 style="margin-bottom:15px;">构造函数</h3>
             </div>
@@ -1203,7 +1293,49 @@
         <br/>
         <div class=""><h3 style="margin-bottom:15px;">方法详情</h3></div>
         
-            <a name="getBounds"> </a>
+            <a class="anchor" name="addTo"> </a>
+            <div class="member-box">
+            <div class="member-header">
+            
+            <b>addTo</b>(container:<a href="../symbols/Container.html">Container</a>, index:Uint)
+            </div>
+            <div class="description">添加此对象到父容器。</div>
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label">parameters</span></dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>container</b>:<span><a href="../symbols/Container.html">Container</a></span> 
+                         — 一个容器。
+                    </dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>index</b>:<span>Uint</span> 
+                         — 要添加到索引位置。
+                    </dt>
+                
+                </dl>
+            
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"> — 可视对象本身。</dd>
+                
+                </dl>
+            
+            
+            
+
+            </div>
+        
+            <a class="anchor" name="getBounds"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1236,7 +1368,7 @@
 
             </div>
         
-            <a name="hitTestObject"> </a>
+            <a class="anchor" name="hitTestObject"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1271,7 +1403,7 @@
 
             </div>
         
-            <a name="hitTestPoint"> </a>
+            <a class="anchor" name="hitTestPoint"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1318,7 +1450,7 @@
 
             </div>
         
-            <a name="removeFromParent"> </a>
+            <a class="anchor" name="removeFromParent"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1333,12 +1465,19 @@
             
             
             
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"> — 可视对象本身。</dd>
+                
+                </dl>
+            
             
             
 
             </div>
         
-            <a name="render"> </a>
+            <a class="anchor" name="render"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1373,7 +1512,64 @@
 
             </div>
         
-            <a name="toString"> </a>
+            <a class="anchor" name="setBgFill"> </a>
+            <div class="member-box">
+            <div class="member-header">
+            
+            <b>setBgFill</b>(fillStyle:Object, x:Number, y:Number, width:Number, height:Number)
+            </div>
+            <div class="description">设置背景填充样式。限制：DOMRenderer仅支持CSS颜色填充样式。</div>
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label">parameters</span></dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>fillStyle</b>:<span>Object</span> 
+                         — 填充样式。可以是CSS颜色值、canvas的gradient或pattern填充。
+                    </dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>x</b>:<span>Number</span> 
+                         — 背景填充的起始点的x轴坐标。
+                    </dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>y</b>:<span>Number</span> 
+                         — 背景填充的起始点的y轴坐标。
+                    </dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>width</b>:<span>Number</span> 
+                         — 背景填充的区域宽度。
+                    </dt>
+                
+                    <dt style="margin-left:20px;font-weight:normal;">
+                        <b>height</b>:<span>Number</span> 
+                         — 背景填充的区域高度。
+                    </dt>
+                
+                </dl>
+            
+            
+            
+            
+            
+                <dl class="detailList">
+                <dt class="heading"><span class="label">return</span></dt>
+                
+                    <dd style="margin-left:20px;font-weight:normal;"> — 可视对象本身。</dd>
+                
+                </dl>
+            
+            
+            
+
+            </div>
+        
+            <a class="anchor" name="toString"> </a>
             <div class="member-box">
             <div class="member-header">
             

@@ -68,6 +68,12 @@
         
         
         
+        <li class="nav-pkg">loader<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/LoadQueue.html">LoadQueue</a></li>
+        
+        
+        
         <li class="nav-pkg">renderer<span></span></li>
         
         <li class="nav-class"><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a></li>
@@ -438,6 +444,27 @@
                             <div class="description">
                                 
                                 可视对象的测量宽度。只读属性。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritProp' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
+                            <div>
+                                <!--  -->
+                                <b><a href="../symbols/View.html#onUpdate">onUpdate</a></b>:Function
+                            </div>
+                            <div class="description">
+                                
+                                更新可视对象，此方法会在可视对象渲染之前调用。此函数可以返回一个Boolean值。若返回false，则此对象不会渲染。默认值为null。
+限制：如果在此函数中改变了可视对象在其父容器中的层级，当前渲染帧并不会正确渲染，而是在下一渲染帧。可在其父容器的onUpdate方法中来实现。
                             </div>
                         </td>
                         <td>
@@ -1016,6 +1043,24 @@
                             <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
                         </td>
                         <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#addTo">addTo</a></b>(container:<a href="../symbols/Container.html">Container</a>, index:Uint):
+                            </div>
+                            <div class="description">
+                                
+                                添加此对象到父容器。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritMethod' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
                             <div><b><a href="../symbols/View.html#getBounds">getBounds</a></b>():Array
                             </div>
                             <div class="description">
@@ -1070,7 +1115,7 @@
                             <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
                         </td>
                         <td class="fixedFont">
-                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>()
+                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>():
                             </div>
                             <div class="description">
                                 
@@ -1093,6 +1138,24 @@
                             <div class="description">
                                 
                                 可视对象的具体渲染逻辑。子类可通过覆盖此方法实现自己的渲染。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritMethod' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#setBgFill">setBgFill</a></b>(fillStyle:Object, x:Number, y:Number, width:Number, height:Number):
+                            </div>
+                            <div class="description">
+                                
+                                设置背景填充样式。限制：DOMRenderer仅支持CSS颜色填充样式。
                             </div>
                         </td>
                         <td>
@@ -1147,7 +1210,7 @@
             <h3 style="margin-bottom:15px;">属性详情</h3>
         </div>
         
-            <a name="children"> </a>
+            <a class="anchor" name="children"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>children</b><span class="light">:Array</span>
@@ -1166,7 +1229,7 @@
 
             </div>
         
-            <a name="clipChildren"> </a>
+            <a class="anchor" name="clipChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>clipChildren</b><span class="light">:Boolean</span>
@@ -1185,7 +1248,7 @@
 
             </div>
         
-            <a name="numChildren"> </a>
+            <a class="anchor" name="numChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>numChildren</b><span class="light">:Number</span>
@@ -1204,7 +1267,7 @@
 
             </div>
         
-            <a name="pointerChildren"> </a>
+            <a class="anchor" name="pointerChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>pointerChildren</b><span class="light">:Boolean</span>
@@ -1229,7 +1292,7 @@
         
         <br/>
         <div class="details">
-            <a name="constructor"> </a>
+            <a class="anchor" name="constructor"> </a>
             <div class="">
                 <h3 style="margin-bottom:15px;">构造函数</h3>
             </div>
@@ -1258,7 +1321,7 @@
         <br/>
         <div class=""><h3 style="margin-bottom:15px;">方法详情</h3></div>
         
-            <a name="addChild"> </a>
+            <a class="anchor" name="addChild"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1288,7 +1351,7 @@
 
             </div>
         
-            <a name="addChildAt"> </a>
+            <a class="anchor" name="addChildAt"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1323,7 +1386,7 @@
 
             </div>
         
-            <a name="contains"> </a>
+            <a class="anchor" name="contains"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1353,7 +1416,7 @@
 
             </div>
         
-            <a name="getChildAt"> </a>
+            <a class="anchor" name="getChildAt"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1383,7 +1446,7 @@
 
             </div>
         
-            <a name="getChildById"> </a>
+            <a class="anchor" name="getChildById"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1413,7 +1476,7 @@
 
             </div>
         
-            <a name="getChildIndex"> </a>
+            <a class="anchor" name="getChildIndex"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1443,7 +1506,7 @@
 
             </div>
         
-            <a name="getViewAtPoint"> </a>
+            <a class="anchor" name="getViewAtPoint"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1493,7 +1556,7 @@
 
             </div>
         
-            <a name="removeAllChildren"> </a>
+            <a class="anchor" name="removeAllChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1513,7 +1576,7 @@
 
             </div>
         
-            <a name="removeChild"> </a>
+            <a class="anchor" name="removeChild"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1550,7 +1613,7 @@
 
             </div>
         
-            <a name="removeChildAt"> </a>
+            <a class="anchor" name="removeChildAt"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1587,7 +1650,7 @@
 
             </div>
         
-            <a name="removeChildById"> </a>
+            <a class="anchor" name="removeChildById"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1624,7 +1687,7 @@
 
             </div>
         
-            <a name="setChildIndex"> </a>
+            <a class="anchor" name="setChildIndex"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1659,7 +1722,7 @@
 
             </div>
         
-            <a name="sortChildren"> </a>
+            <a class="anchor" name="sortChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1689,7 +1752,7 @@
 
             </div>
         
-            <a name="swapChildren"> </a>
+            <a class="anchor" name="swapChildren"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1724,7 +1787,7 @@
 
             </div>
         
-            <a name="swapChildrenAt"> </a>
+            <a class="anchor" name="swapChildrenAt"> </a>
             <div class="member-box">
             <div class="member-header">
             

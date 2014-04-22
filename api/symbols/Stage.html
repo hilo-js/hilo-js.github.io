@@ -68,6 +68,12 @@
         
         
         
+        <li class="nav-pkg">loader<span></span></li>
+        
+        <li class="nav-class"><a href="../symbols/LoadQueue.html">LoadQueue</a></li>
+        
+        
+        
         <li class="nav-pkg">renderer<span></span></li>
         
         <li class="nav-class"><a href="../symbols/CanvasRenderer.html">CanvasRenderer</a></li>
@@ -170,7 +176,7 @@
             
                 <span style="display:block;margin:0 0 2px 0;">
                     <b style="margin-right:10px;">依赖</b>
-                    <span><a href="../symbols/Hilo.html">hilo/core/Hilo</a></span>, <span><a href="../symbols/Class.html">hilo/core/Class</a></span>, <span><a href="../symbols/Container.html">hilo/view/Container</a></span>
+                    <span><a href="../symbols/Hilo.html">hilo/core/Hilo</a></span>, <span><a href="../symbols/Class.html">hilo/core/Class</a></span>, <span><a href="../symbols/Container.html">hilo/view/Container</a></span>, <span><a href="../symbols/CanvasRenderer.html">hilo/renderer/CanvasRenderer</a></span>
                 </span>
             
 
@@ -217,7 +223,7 @@
                             </div>
                             <div class="description">
                                 
-                                舞台所对应的画布。它可以是一个canvas或一个普通的div。只读属性。可通过构造函数传入。
+                                舞台所对应的画布。它可以是一个canvas或一个普通的div。只读属性。
                             </div>
                         </td>
                         <td>
@@ -502,6 +508,27 @@
                         </td>
                         <td>
                             <a href="../symbols/Container.html">Container</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritProp' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
+                            <div>
+                                <!--  -->
+                                <b><a href="../symbols/View.html#onUpdate">onUpdate</a></b>:Function
+                            </div>
+                            <div class="description">
+                                
+                                更新可视对象，此方法会在可视对象渲染之前调用。此函数可以返回一个Boolean值。若返回false，则此对象不会渲染。默认值为null。
+限制：如果在此函数中改变了可视对象在其父容器中的层级，当前渲染帧并不会正确渲染，而是在下一渲染帧。可在其父容器的onUpdate方法中来实现。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
                         </td>
                     </tr>
                 
@@ -916,6 +943,24 @@
                             <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
                         </td>
                         <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#addTo">addTo</a></b>(container:<a href="../symbols/Container.html">Container</a>, index:Uint):
+                            </div>
+                            <div class="description">
+                                
+                                添加此对象到父容器。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritMethod' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
                             <div><b><a href="../symbols/Container.html#contains">contains</a></b>(child:<a href="../symbols/View.html">View</a>)
                             </div>
                             <div class="description">
@@ -1132,7 +1177,7 @@
                             <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
                         </td>
                         <td class="fixedFont">
-                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>()
+                            <div><b><a href="../symbols/View.html#removeFromParent">removeFromParent</a></b>():
                             </div>
                             <div class="description">
                                 
@@ -1155,6 +1200,24 @@
                             <div class="description">
                                 
                                 可视对象的具体渲染逻辑。子类可通过覆盖此方法实现自己的渲染。
+                            </div>
+                        </td>
+                        <td>
+                            <a href="../symbols/View.html">View</a>
+                        </td>
+                    </tr>
+                
+                    
+                    <tr class='inheritMethod' style='display:none;'>
+                        <td>
+                            <i class="icon-arrow-up" style="margin:12px 0 0 4px;"></i>
+                        </td>
+                        <td class="fixedFont">
+                            <div><b><a href="../symbols/View.html#setBgFill">setBgFill</a></b>(fillStyle:Object, x:Number, y:Number, width:Number, height:Number):
+                            </div>
+                            <div class="description">
+                                
+                                设置背景填充样式。限制：DOMRenderer仅支持CSS颜色填充样式。
                             </div>
                         </td>
                         <td>
@@ -1281,14 +1344,14 @@
             <h3 style="margin-bottom:15px;">属性详情</h3>
         </div>
         
-            <a name="canvas"> </a>
+            <a class="anchor" name="canvas"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>canvas</b><span class="light">:HTMLElement</span>
             
             </div>
             <div class="description">
-                舞台所对应的画布。它可以是一个canvas或一个普通的div。只读属性。可通过构造函数传入。
+                舞台所对应的画布。它可以是一个canvas或一个普通的div。只读属性。
             </div>
             
             
@@ -1300,7 +1363,7 @@
 
             </div>
         
-            <a name="paused"> </a>
+            <a class="anchor" name="paused"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>paused</b><span class="light">:Boolean</span>
@@ -1319,7 +1382,7 @@
 
             </div>
         
-            <a name="renderer"> </a>
+            <a class="anchor" name="renderer"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>renderer</b><span class="light">:<a href="../symbols/Renderer.html">Renderer</a></span>
@@ -1338,7 +1401,7 @@
 
             </div>
         
-            <a name="viewport"> </a>
+            <a class="anchor" name="viewport"> </a>
             <div class="member-box">
             <div class="member-header">
             <b>viewport</b><span class="light">:Object</span>
@@ -1363,7 +1426,7 @@
         
         <br/>
         <div class="details">
-            <a name="constructor"> </a>
+            <a class="anchor" name="constructor"> </a>
             <div class="">
                 <h3 style="margin-bottom:15px;">构造函数</h3>
             </div>
@@ -1392,7 +1455,7 @@
         <br/>
         <div class=""><h3 style="margin-bottom:15px;">方法详情</h3></div>
         
-            <a name="enableDOMEvent"> </a>
+            <a class="anchor" name="enableDOMEvent"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1427,7 +1490,7 @@
 
             </div>
         
-            <a name="tick"> </a>
+            <a class="anchor" name="tick"> </a>
             <div class="member-box">
             <div class="member-header">
             
@@ -1457,7 +1520,7 @@
 
             </div>
         
-            <a name="updateViewport"> </a>
+            <a class="anchor" name="updateViewport"> </a>
             <div class="member-box">
             <div class="member-header">
             
